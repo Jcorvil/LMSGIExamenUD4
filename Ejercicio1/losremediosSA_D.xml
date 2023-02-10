@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE losremediosSA SYSTEM "losremediosSA.dtd">
+<losremediosSA>
+    <sucursal>
+        <albaran>
+            <zonaExposicion>
+                <codSucursal codigo="X1234567">A1458798</codSucursal>
+                <trabajador>Jorge</trabajador>
+                <fechaPedido>10/02/2023</fechaPedido>
+                <observacionPedido valores="Urgente/Incompleto">Urgente</observacionPedido>
+            </zonaExposicion>
+            <zonaGestion>
+                <codigoArticulo codigo="ABC-1-2-3">GFT-5-7-9</codigoArticulo>
+                <unidades>3</unidades>
+                <precioUnidad>15</precioUnidad>
+                <observacionArticulo>Entrega rápida</observacionArticulo>
+                <plazorevision intervalo="Dias">30</plazorevision>
+            </zonaGestion>
+        </albaran>
+    </sucursal>
+</losremediosSA>

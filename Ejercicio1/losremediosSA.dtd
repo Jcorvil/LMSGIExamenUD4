@@ -1,0 +1,18 @@
+<!ELEMENT losremediosSA (sucursal)>
+<!ELEMENT sucursal (albaran*)>
+<!ELEMENT albaran (zonaExposicion, zonaGestion)>
+<!ELEMENT zonaExposicion (codSucursal, trabajador, fechaPedido, observacionPedido)>
+<!ELEMENT codSucursal (#PCDATA)>
+<!ELEMENT trabajador (#PCDATA)>
+<!ELEMENT fechaPedido (#PCDATA)>
+<!ELEMENT observacionPedido (#PCDATA)>
+<!ATTLIST codSucursal codigo CDATA #IMPLIED>
+<!ATTLIST observacionPedido valores CDATA #IMPLIED>
+<!ELEMENT zonaGestion (codigoArticulo, unidades, precioUnidad, observacionArticulo, plazorevision)>
+<!ELEMENT codigoArticulo (#PCDATA)>
+<!ELEMENT unidades (#PCDATA)>
+<!ELEMENT precioUnidad (#PCDATA)>
+<!ELEMENT observacionArticulo (#PCDATA)>
+<!ELEMENT plazorevision (#PCDATA)>
+<!ATTLIST codigoArticulo codigo CDATA #IMPLIED>
+<!ATTLIST plazorevision intervalo CDATA #IMPLIED>

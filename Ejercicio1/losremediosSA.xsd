@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="losremediosSA">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="sucursal">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="albaran" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="zonaExposicion" minOccurs="1" maxOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="codSucursal"/>
+                                                    <xs:element name="trabajador" type="xs:string"/>
+                                                    <xs:element name="fechaPedido" type="xs:string"/>
+                                                    <xs:element name="observacionPedido"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="codigo" type="xs:string"/>
+                                                <xs:attribute name="valores" type="xs:string"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="zonaGestion" minOccurs="1" maxOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="codigoArticulo"/>
+                                                    <xs:element name="unidades" type="xs:integer"/>
+                                                    <xs:element name="precioUnidad" type="xs:integer"/>
+                                                    <xs:element name="observacionArticulo" type="xs:string"/>
+                                                    <xs:element name="plazorevision"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="intervalo" type="xs:string"/>
+                                                <xs:attribute name="codigo" type="xs:string"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
